@@ -1,0 +1,75 @@
+button:focus {outline:0;}
+.content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 3px 10px #c3d3d7;
+}
+.navbar-top{
+    margin: 0 auto;
+    color: #fff;
+}
+
+#passwordDisplay{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 100%;
+    height: 100px;
+    color: #9aa8ac;
+    border: 1px dashed #c3d3d7;
+}
+
+#slider{
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons button{
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: 0;
+    box-shadow: none;
+}
+
+#butttt{
+    color: #fff;
+    background: #ef463f;
+}
+#butttt:hover{
+    background: #ff4b43;
+}
+
+#copy{
+    color: #fff;
+    background: #788387;
+}
+#copy:hover{
+    background: #95a3a8;
+}
+
+@media(max-width: 424px){
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttons button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .navbar-top{
+        font-size: 30px;
+    }
+}
