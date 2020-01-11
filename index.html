@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+  </head>
+
+  <body>
+    <header>
+     <nav class="navbar navbar-dark bg-dark">
+        <h1 class="navbar-top">Password Generator</h1>
+     </nav>
+    </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 mx-auto">
+            <div class="content">
+              <h2>Generate a Password</h2>
+              <br />
+              <div id="passwordDisplay">
+                Your secure password
+              </div>
+              <br />
+              <div class="length">
+                Password Length: <span id="length">8</span>
+              </div>
+              <br />
+              <input type="range" min="8" max="128" name="slider" id="slider" value="8">
+              <br />
+              <div class="buttons">
+                <button id='butttt' onclick="generatePassword()">Generate Password</button>
+                <button id="copy" data-clipboard-target="#passwordDisplay" data-clipboard-action="copy">Copy to Clipboard</button>
+              </div>
+           </div>
+            <div class="previous_generated_passwords">
+              <b>Previously Generated Passwords</b>
+              <br />
+              <div id="lastPasswords"></div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <script src="./js/jquery.js"></script>
+      <script src="./js/script.js"></script>
+      <script src="./js/clipboard.min.js"></script>
+      <script src="https://unpkg.com/popper.js@1"></script>
+      <script src="https://unpkg.com/tippy.js@5"></script>
+  </body>
+</html>
